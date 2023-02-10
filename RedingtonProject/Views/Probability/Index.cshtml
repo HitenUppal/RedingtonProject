@@ -1,0 +1,62 @@
+﻿@model RedingtonProject.Models.ProbabilityModel
+
+@{
+    ViewData["Title"] = "Probability Calculator";
+}
+
+
+
+<body>
+
+
+
+    @using (Html.BeginForm())
+    {
+
+        <h2>Probability Calculator</h2>
+
+        <input type="number" id="pA" name="ViewA" min="0" max="1" step="any" value="@Model.P_A" required >
+        <br />
+        <br />
+        <input type="number" id="pB" name="ViewB" min="0" max="1" step="any" value="@Model.P_B" required>
+        <br />
+        <br />
+
+        <br />
+        <label>Function 1: </label>
+        <input type="radio" id="func1" name="ViewFunc" value="1" required >
+        <br />
+        <br />
+        <label>Function 2: </label>
+        <input type="radio" id="func2" name="ViewFunc" value="2" required>
+
+        <br />
+        <br />
+
+
+        <input Value="Calculate" type="submit">
+        <br />
+        <br />
+
+
+
+
+        <br />
+        <br />
+
+        <strong>P(A): </strong>
+        <strong>@Model.P_A</strong>
+        <br />
+        <strong>P(B): </strong>
+        <strong>@Model.P_B</strong>
+        <br />
+        <strong> Output Calculation: </strong>
+        <strong>@Model.P_OUT</strong>
+
+       } 
+
+
+
+</body>
+
+
