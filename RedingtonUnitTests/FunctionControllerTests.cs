@@ -7,7 +7,7 @@ using Xunit.Sdk;
 
 namespace RedingtonUnitTests
 {
-    public class UnitTest1
+    public class FunctionControllerTests
     {
 
 
