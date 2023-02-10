@@ -38,6 +38,8 @@ namespace RedingtonProject.Controllers
             string dT = DateTime.Now.ToString("dd-MM-yyyy--HH-mm-ss");
             string date = DateTime.Now.ToString("dd-MM-yyyy");
 
+            System.IO.Directory.CreateDirectory(sysPath + "/logs");   
+
             string filePath = sysPath + "/logs/" + "log-" + dT + ".txt";
 
             StreamWriter sb = new StreamWriter(filePath);
