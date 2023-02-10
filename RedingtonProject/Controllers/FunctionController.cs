@@ -9,7 +9,7 @@ namespace RedingtonProject.Controllers
   
         LogController logger = new LogController();
 
-        public double FunctionOne(ProbabilityModel pm)
+        public double AIntersectionB(ProbabilityModel pm)
         {
             pm.P_OUT = (double)Decimal.Multiply((Decimal)pm.P_A, (Decimal)pm.P_B);
 
@@ -17,7 +17,7 @@ namespace RedingtonProject.Controllers
             return pm.P_OUT;
         }
 
-        public double FunctionTwo(ProbabilityModel pm)
+        public double AUnionB(ProbabilityModel pm)
         {
              pm.P_OUT = (double)((Decimal)(pm.P_A + pm.P_B) - (Decimal.Multiply((Decimal)pm.P_A, (Decimal)pm.P_B)));
              logger.runLogger(pm);

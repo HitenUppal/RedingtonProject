@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RedingtonProject.Models;
 using RedingtonProject.Services;
-using System.Diagnostics;
-using System.Linq.Expressions;
-using System.Transactions;
+
 
 namespace RedingtonProject.Controllers
 {
@@ -43,10 +41,10 @@ namespace RedingtonProject.Controllers
             switch (pm.FUNC_MODEL)
             {
                 case 1:
-                    _service.FunctionOne(pm);
+                    _service.AIntersectionB(pm);
                     break;
                 case 2:
-                    _service.FunctionTwo(pm);
+                    _service.AUnionB(pm);
                     break;
                 default:
                     break;

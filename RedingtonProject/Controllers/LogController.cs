@@ -24,11 +24,11 @@ namespace RedingtonProject.Controllers
 
             if (pm.FUNC_MODEL == 1)
             {
-                logFunction = "Function 1";
+                logFunction = "P(A ∩ B)";
             }
             if (pm.FUNC_MODEL == 2)
             {
-                logFunction = "Function 2";
+                logFunction = "P(A ∪ B)";
             }
 
             Thread.Sleep(1000);

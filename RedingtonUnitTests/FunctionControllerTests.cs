@@ -24,7 +24,7 @@ namespace RedingtonUnitTests
 
             var controller = new FunctionController();
 
-            var result = controller.FunctionOne(mockModel);
+            var result = controller.AIntersectionB(mockModel);
 
             Assert.Equal(result, expected);
 
@@ -41,7 +41,7 @@ namespace RedingtonUnitTests
 
             var controller = new FunctionController();
 
-            var result = controller.FunctionTwo(mockModel);
+            var result = controller.AUnionB(mockModel);
 
             Assert.Equal(result, expected);
         }
